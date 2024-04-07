@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>JS 4</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Assignments</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Chapter 21-25</a>
+                        </li>
+                    </ul>
+                    <form id="form" class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Chapter # 21-25 | Strings & it's Methods'</h4>
+                    <hr>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h3 class="text-center">Input</h3>
+                    <div class="border rounded-3 p-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-transparent" placeholder="type your text here">
+                            <button class="btn btn-outline-secondary" onclick="clear()">Clear</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h3 class="text-center">Original String</h3>
+                    <div class="border rounded-3 p-3 text-white bg-dark" id="original-string">
+                        <div class="text-center"> 
+                            I love my country pakistan.<br>I like my city Faisalabad.<br>I love my Homeland
+                        </div>
+                    </div>
+                </div>
+            </div>
+       <!--    <div class="col-md-5 text-center">
+    <h3>Buttons</h3>
+    <div class="border rounded-3 p-4" id="buttons">
+        
+    </div>
+</div>
+<div class="col-md-5 mt-md-0">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="text-center">Output / Result</h3>
+                        <div class="border rounded-3 p-4" id="output"></div>
+                        <button class="btn btn-outline-secondary text-capitalize mt-3" onclick="clearOutput()">Clear Output</button>
+                    </div>
+                </div>
+            </div>
+        -->
+     <div class="row mt-5">
+            <div class="col-md-5 text-center">
+                <div class="border rounded-3 p-4" id="buttons">
+        <button class="btn btn-lg btn-danger mb-2 text-capitalize" onclick="convertToLower()">Convert to Lowercase</button>
+        <button class="btn btn-lg btn-danger mb-2 text-capitalize" onclick="convertToUpper()">Convert to Uppercase</button>
+        <button class="btn btn-lg btn-danger mb-2 text-capitalize" onclick="convertToCapitalize()">Convert to Capitalize</button>
+        <button class="btn btn-lg btn-danger mb-2 text-capitalize" onclick="formatText()">Better Formatting</button>
+        <button class="btn btn-lg btn-danger mb-2 text-capitalize" onclick="printAllCities()">Print All Cities</button>
+        <button class="btn btn-lg btn-danger mb-2 text-capitalize" onclick="addCityToList()">Add Your City to List</button>
+        <button class="btn btn-lg btn-danger mb-2 text-capitalize" onclick="checkCityInList()">Check Your City in List</button>
+        <button class="btn btn-lg btn-danger mb-2 text-capitalize" onclick="findWord()">Find the Word</button>
+        <button class="btn btn-lg btn-danger text-capitalize" onclick="replaceWord()">Replace This Word</button>
+                </div>
+            </div>
+            <div class="col-md-6 text center">
+                <div class="border rounded-3 p-4" id="output"></div>
+                <button class="btn btn-outline-secondary text-capitalize mt-3" onclick="clearOutput()">Clear Output</button>
+            </div>
+        </div>
+    </div>
+            
+        
+    </main>
+    <footer class="bg-dark text-white text-center py-2">
+        <div class="container">
+            <p class="m-0">&copy; Powered by noob</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
